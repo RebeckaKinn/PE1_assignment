@@ -3,6 +3,7 @@ Task
 - 10 weeks work time
 - Data: https://docs.noroff.dev/docs/v2/basic/online-shop 
 - Swagger UI (get elements): https://v2.api.noroff.dev/docs/static/index.html#/online-shop 
+- Must write html files like the first assignment.. 
 
 Reguirements
 - HTML, CSS and JS
