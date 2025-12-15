@@ -31,6 +31,8 @@
     --button: 14px;
     --placeholder-font-size: 16px;
     --highlight-font-size: 20px;
+
+    --shadow: 0px 3px 13px 0px rgba(0,0,0,0.25);
  
     /*fonts*/
     --font-main: "Roboto Mono", monospace;
@@ -69,6 +71,9 @@ p{
 }
 form{
     border-radius: var(--form-border-radius);
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
 }
 
 ::placeholder{
@@ -85,4 +90,9 @@ form{
     border-radius: var(--button-border-radius);
     border-width: var(--button-border);
     background-color: var(--color-main-2);
+}
+.shadow{
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
 }
