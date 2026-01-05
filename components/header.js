@@ -1,26 +1,30 @@
 
 function header(){
     document.getElementById('header').innerHTML = /*HTML*/`
-    <section>
+    <section class="header">
         <div>
-            <img src="public/logo/Logo-main.svg" alt="TechLabs logo" loading="lazy">
+            <picture>
+                <source media="(max-width: 750px)" srcset="public/logo/Logo-secondary.svg">
+                <source media="(min-width: 751px)" srcset="public/logo/Logo-main.svg">
+                <img src="public/logo/Logo-main.svg" alt="TechLabs logo" loading="lazy">
+            </picture>
         </div>
 
-        <nav>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="../index.html">products</a>
                 </li>
                 <li>
                     <a href="../cart.html">cart
-                    <img src="public/icons/cart.svg" alt="" loading="lazy">
+                    <div>
+                        <img src="public/icons/cart.svg" alt="" loading="lazy">
+                    </div>
                     </a> 
                 </li>
                 <li>
-                    <a href="../account/login.html">log in</a>
+                    <a class="button red" href="../account/login.html">log in</a>
                 </li>
             </ul>
-        </nav>
     </section>
     `;
 }

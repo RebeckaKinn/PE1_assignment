@@ -16,7 +16,7 @@
     --gray: #959595;
 
     /*values*/
-    --button-border-radius: 50%;
+    --button-border-radius: 2rem;
     --button-border: 2px;
     --form-border-radius: 20%;
 
@@ -96,6 +96,8 @@ img{
     border-radius: var(--button-border-radius);
     border-width: var(--button-border);
     background-color: var(--color-main-2);
+    padding: 10px 45px;
+    cursor: pointer;
 }
 .shadow{
     box-shadow: var(--shadow);
