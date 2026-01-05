@@ -3,7 +3,7 @@ function header(){
     document.getElementById('header').innerHTML = /*HTML*/`
     <section>
         <div>
-            <img src="" alt="TechLabs logo" loading="lazy">
+            <img src="public/logo/Logo-main.svg" alt="TechLabs logo" loading="lazy">
         </div>
 
         <nav>
@@ -13,7 +13,7 @@ function header(){
                 </li>
                 <li>
                     <a href="../cart.html">cart
-                    <img src="" alt="" loading="lazy">
+                    <img src="public/icons/cart.svg" alt="" loading="lazy">
                     </a> 
                 </li>
                 <li>
