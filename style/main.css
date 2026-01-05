@@ -33,6 +33,8 @@
     --highlight-font-size: 20px;
 
     --shadow: 0px 3px 13px 0px rgba(0,0,0,0.25);
+    --menu-lines-width: 37px;
+    --menu-lines-height: 2px;
  
     /*fonts*/
     --font-main: "Roboto Mono", monospace;
@@ -103,4 +105,14 @@ img{
     box-shadow: var(--shadow);
     -webkit-box-shadow: var(--shadow);
     -moz-box-shadow: var(--shadow);
+}
+
+.hidden{
+        display: none !important;
+    }
+@media screen and (min-width: 750px){
+    .hidden-on-desktop{
+        display: none !important;
+    }
+    
 }
