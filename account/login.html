@@ -11,10 +11,25 @@
     <link href="/style/header.css" rel="stylesheet"/>
     <link href="/style/main.css" rel="stylesheet"/>
     <link href="/style/components.css" rel="stylesheet"/>
+
+    <link href="/style/login.css" rel="stylesheet"/>
 </head>
 <body onload="header()">
     <header id="header"></header>
-    <main>main login</main>
+    <main>
+        <h2>log in</h2>
+        <form>
+            <label for="email">email</label>
+            <input id="email" type="email" placeholder="example@mail.com">
+
+            <label for="password">password</label>
+            <input id="password" type="text" placeholder="Password">
+        </form>
+        <div>
+            <a class="button" href="/account/register.html">register</a>
+            <a class="button" href="/index.html">log in</a>
+        </div>
+    </main>
     
     <script src="/components/header.js"></script>
 </body>

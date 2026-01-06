@@ -18,7 +18,7 @@
     /*values*/
     --button-border-radius: 2rem;
     --button-border: 2px;
-    --form-border-radius: 20%;
+    --form-border-radius: 2rem;
 
     --h1: 48px;
     --h2: 40px;
@@ -81,11 +81,14 @@ h5{
 p{
     font-size: var(--p);
 }
-form{
+form input{
     border-radius: var(--form-border-radius);
-    box-shadow: var(--shadow);
+    border: none;
+    background-color: var(--color-secondary-3);
+    padding: 1rem 2rem;
+    /* box-shadow: var(--shadow);
     -webkit-box-shadow: var(--shadow);
-    -moz-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow); */
 }
 
 img{
