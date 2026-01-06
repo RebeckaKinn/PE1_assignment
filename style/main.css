@@ -2,3 +2,7 @@ main{
     min-height: 100vh;
     padding-top: var(--header-height);
 }
+.main-color-2{
+    color: var(--color-main-2);
+}
+
