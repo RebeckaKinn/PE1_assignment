@@ -76,16 +76,15 @@ header{
     }
     .menu{
         position: fixed;
-        top: 0;
+        top: var(--header-height);
         right: 0;
         width: 100%;
-        height: 100%;
+        height: calc(100% - var(--header-height));
         opacity: 0;
 
         transform: translateX(100%);
         transition: transform 0.5s ease, opacity 0.5s ease;
 
-        margin-top: var(--header-height);
         padding: 50px;
         background-color: var(--color-secondary-2);
         z-index: 19;
@@ -93,6 +92,8 @@ header{
         flex-direction: column;
         align-items: flex-end;
         gap: 3rem;
+
+        overflow: hidden;
     }
     
     #navigation input:checked ~ ul.menu{
@@ -100,5 +101,17 @@ header{
         opacity: 1;
     }
 
+    .menu::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 45%;
+
+        background-color: var(--color-main-2);
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
    
 }
