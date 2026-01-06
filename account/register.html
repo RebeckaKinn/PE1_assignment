@@ -11,10 +11,35 @@
     <link href="/style/header.css" rel="stylesheet"/>
     <link href="/style/main.css" rel="stylesheet"/>
     <link href="/style/components.css" rel="stylesheet"/>
+
+    <link href="/style/login.css" rel="stylesheet"/>
 </head>
 <body onload="header()">
     <header id="header"></header>
-    <main>main register</main>
+    <main>
+        <section class="form-section shadow">
+            <h2 class="main-color-2">register</h2>
+            <form>
+                <div>
+                    <label for="email">email</label>
+                    <input id="email" type="email" placeholder="example@mail.com">
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input id="password" type="text" placeholder="password">
+                </div>
+                <div>
+                    <label for="repeat-password">repeat password</label>
+                    <input id="repeat-password" type="text" placeholder="password">
+                </div>
+            </form>
+            <div class="button-container">
+                <a class="button border" href="/account/login.html">back</a>
+                <a class="button" href="/index.html">create</a>
+            </div>
+
+        </section>
+    </main>
     
     <script src="/components/header.js"></script>
 </body>
