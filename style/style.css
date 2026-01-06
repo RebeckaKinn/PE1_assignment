@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    /*colors*/
+    --color-main: #BF1A1A;
+    --color-main-2: #060771;
+
+    --color-secondary: #FF6C0C;
+    --color-secondary-2: #ECECEC;
+    --color-secondary-3: #FFFFFF;
+
+    --color-background: #F9F5F0;
+    --color-text: #1E1E1E;
+    --gray: #959595;
+
+    /*values*/
+    --button-border-radius: 2rem;
+    --button-border: 2px;
+    --form-border-radius: 20%;
+
+    --h1: 48px;
+    --h2: 40px;
+    --h3: 32px;
+    --h4: 24px;
+    --h5: 20px;
+
+    --p: 16px;
+    --small-text: 14px;
+    --button: 14px;
+    --placeholder-font-size: 16px;
+    --highlight-font-size: 20px;
+
+    --shadow: 0px 3px 13px 0px rgba(0,0,0,0.25);
+    --menu-lines-width: 37px;
+    --menu-lines-height: 2px;
+
+    --header-height: 113px;
+ 
+    /*fonts*/
+    --font-main: "Roboto Mono", monospace;
+    --font-secondary: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-secondary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, a, button{
+    font-family: var(--font-main);
+    font-weight: 500;
+}
+h1{
+    font-size: var(--h1);
+}
+h2{
+    font-size: var(--h2);
+}
+h3{
+    font-size: var(--h3);
+}
+h4{
+    font-size: var(--h4);
+}
+h5{
+    font-size: var(--h5);
+}
+p{
+    font-size: var(--p);
+}
+form{
+    border-radius: var(--form-border-radius);
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+::placeholder{
+    color: var(--gray);
+    font-size: var(--placeholder-font-size);
+    font-style: italic;
+    font-family: var(--font-secondary);
+}
+
+.button{
+    text-decoration: none;
+    font-size: var(--button);
+    color: var(--color-background);
+    border-radius: var(--button-border-radius);
+    border-width: var(--button-border);
+    background-color: var(--color-main-2);
+    padding: 10px 45px;
+    cursor: pointer;
+}
+.shadow{
+    box-shadow: var(--shadow);
+    -webkit-box-shadow: var(--shadow);
+    -moz-box-shadow: var(--shadow);
+}
+
+.hidden{
+        display: none !important;
+    }
+@media screen and (min-width: 750px){
+    .hidden-on-desktop{
+        display: none !important;
+    }
+    
+}
+@media screen and (max-width: 750px){
+    
+    :root{
+        --header-height: 72px;
+    }
+}

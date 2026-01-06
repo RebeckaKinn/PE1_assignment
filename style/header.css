@@ -1,3 +1,8 @@
+header{
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+}
 .header{
     display: flex;
     flex-direction: row;
@@ -57,6 +62,10 @@
     }
 
 @media screen and (max-width: 750px){
+
+    .header{
+        padding: 10px 20px;
+    }
     .menu{
         
         position: fixed;
