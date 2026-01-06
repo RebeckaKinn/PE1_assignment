@@ -20,6 +20,13 @@ function header(){
 
                 <ul class="menu">
                     <li>
+                        <label for="menu" class="hidden-on-desktop" aria-label="Close menu">
+                            <div class="close-menu-icon">
+                                <img src="public/icons/close.svg" alt="" loading="lazy"/>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
                         <a href="../index.html">products</a>
                     </li>
                     <li>
@@ -32,7 +39,9 @@ function header(){
                     <li>
                         <a class="button red" href="../account/login.html">log in</a>
                     </li>
+                    
                 </ul>
+
             </nav>
     </section>
     `;

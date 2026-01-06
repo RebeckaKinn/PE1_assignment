@@ -1,0 +1,9 @@
+.background-triangle{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    background-color: var(--color-main-2);
+    height: 100px;
+    width: 100px;
+}
