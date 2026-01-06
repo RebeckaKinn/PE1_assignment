@@ -17,18 +17,24 @@
 <body onload="header()">
     <header id="header"></header>
     <main>
-        <h2>log in</h2>
-        <form>
-            <label for="email">email</label>
-            <input id="email" type="email" placeholder="example@mail.com">
+        <section class="form-section shadow">
+            <h2 class="main-color-2">log in</h2>
+            <form>
+                <div>
+                    <label for="email">email</label>
+                    <input id="email" type="email" placeholder="example@mail.com">
+                </div>
+                <div>
+                    <label for="password">password</label>
+                    <input id="password" type="text" placeholder="Password">
+                </div>
+            </form>
+            <div class="button-container">
+                <a class="button border" href="/account/register.html">register</a>
+                <a class="button" href="/index.html">log in</a>
+            </div>
 
-            <label for="password">password</label>
-            <input id="password" type="text" placeholder="Password">
-        </form>
-        <div>
-            <a class="button" href="/account/register.html">register</a>
-            <a class="button" href="/index.html">log in</a>
-        </div>
+        </section>
     </main>
     
     <script src="/components/header.js"></script>

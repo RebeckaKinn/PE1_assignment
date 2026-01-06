@@ -1,4 +1,16 @@
-.red{
+.button.red{
     color: var(--color-background);
     background-color: var(--color-main);
+    border-color: var(--color-main);
+}
+
+.button.border{
+    color: var(--color-main-2);
+    border: var(--button-border) solid var(--color-main-2);
+    background-color: var(--color-background);
+}
+
+.button-container{
+    display: flex;
+    gap: clamp(1rem, 5vw, 3rem);
 }
