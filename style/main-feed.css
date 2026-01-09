@@ -1,0 +1,15 @@
+.main-layout{
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    row-gap: clamp(2rem, 5vw, 100px);
+}
+
+.main-layout > section:first-child {
+    padding-top: clamp(2rem, 5vw, 100px);
+}
+.main-layout > section:last-child {
+    padding-bottom: clamp(2rem, 5vw, 100px);
+}

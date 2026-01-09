@@ -83,6 +83,10 @@ h5{
 p{
     font-size: var(--p);
 }
+.highlight{
+    font-size: var(--h5);
+    font-weight: 500;
+}
 form input{
     border-radius: var(--button-border-radius);
     border: none;
