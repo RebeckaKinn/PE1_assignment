@@ -120,8 +120,10 @@ img{
     border-radius: var(--button-border-radius);
     border: var(--button-border) solid var(--color-main-2);
     background-color: var(--color-main-2);
-    padding: 10px 45px;
+    padding: 10px clamp(16px, 5vw, 45px);
+
     cursor: pointer;
+    white-space: nowrap;
 }
 .shadow{
     box-shadow: var(--shadow);

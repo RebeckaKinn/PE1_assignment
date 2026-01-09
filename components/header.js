@@ -3,11 +3,13 @@ function header(){
     document.getElementById('header').innerHTML = /*HTML*/`
     <section class="header">
         <div>
-            <picture>
-                <source media="(max-width: 750px)" srcset="/public/logo/Logo-secondary.svg">
-                <source media="(min-width: 751px)" srcset="/public/logo/Logo-main.svg">
-                <img src="/public/logo/Logo-main.svg" alt="TechLabs logo" loading="lazy">
-            </picture>
+            <a href="../index.html">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="/public/logo/Logo-secondary.svg">
+                    <source media="(min-width: 801px)" srcset="/public/logo/Logo-main.svg">
+                    <img src="/public/logo/Logo-main.svg" alt="TechLabs logo" loading="lazy">
+                </picture>
+            </a>
         </div>
 
         <nav id="navigation">
