@@ -43,10 +43,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 70% 30%;
 }
-.product-list-image{
-    /* aspect-ratio: 1/1; */
-    
-}
 
 .product-card-information{
     padding: 0 10px;
