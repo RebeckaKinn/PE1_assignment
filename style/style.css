@@ -135,6 +135,13 @@ img{
     -moz-box-shadow: var(--shadow);
 }
 
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .hidden{
         display: none !important;
     }

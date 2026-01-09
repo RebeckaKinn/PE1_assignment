@@ -1,10 +1,9 @@
 .main-layout{
-    
     width: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    justify-items: center;
-    row-gap: clamp(2rem, 5vw, 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 100px);
 }
 
 .main-layout > section:first-child {
@@ -12,4 +11,13 @@
 }
 .main-layout > section:last-child {
     padding-bottom: clamp(2rem, 5vw, 100px);
+}
+.main-layout > section:not(:first-child) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 784px;
+    
+}
+.logo-div{
+    max-width: 482px;
 }
