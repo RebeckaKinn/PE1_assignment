@@ -1,16 +1,28 @@
 .carousel{
     background-color: var(--color-secondary-2);
     position: relative;
+    overflow: hidden;
 
-    padding: 2rem !important;
+    padding: 2rem 3rem !important;
     margin-top: clamp(2rem, 5vw, 100px);
     width: 100%;
  
+}
+.carousel article{
+    position: absolute;
+    inset: 0;          
+    width: 100%;        
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'information image';
-    align-items: center;
     gap: clamp(0.5rem, 5vw, 2rem);
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    z-index: 5;
 }
 
 .carousel .product-image{
@@ -45,8 +57,58 @@
         clip-path: polygon(100% 0, 0 100%, 100% 100%);
     }
 
-.carousel > * {
+.carousel article> * {
     z-index: 2;   
+}
+
+
+#product-slide1:checked ~ article:nth-of-type(1),
+#product-slide2:checked ~ article:nth-of-type(2),
+#product-slide3:checked ~ article:nth-of-type(3) {
+    position: relative;   
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+
+
+
+.carousel .arrows label {
+    display: none;
+}
+
+#product-slide1:checked ~ .arrows .slide1 {
+    display: block;
+}
+
+#product-slide2:checked ~ .arrows .slide2 {
+    display: block;
+}
+
+#product-slide3:checked ~ .arrows .slide3 {
+    display: block;
+}
+
+.carousel .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    pointer-events: auto;
+    user-select: none;
+}
+
+.carousel .arrow.prev {
+    left: 1rem;
+}
+
+.carousel .arrow.next {
+    right: 1rem;
 }
 
 @media screen and (max-width: 750px){
@@ -55,12 +117,15 @@
         padding: 0 !important;
         padding-bottom: 2rem !important;
 
+        
+        
+    }
+    .carousel article{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         grid-template-areas: 'image'
                             'information';
-
 
     }
     .carousel .product-image{
