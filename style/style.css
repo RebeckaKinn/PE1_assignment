@@ -145,6 +145,9 @@ img{
     padding: 0;
     margin: 0;
 }
+a.reset{
+    all: unset;
+}
 
 .hidden{
         display: none !important;
