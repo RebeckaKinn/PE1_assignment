@@ -19,6 +19,12 @@ async function fetchTopThreeProducts(){
     return result;
 }
 
+async function fetchProductById(id) {
+    const response = await fetch(`${API_URL}/online-shop/${id}`, options)
+    const product = await response.json()
+    return product.data || null; 
+}
+
 /*
 {
       "id": "159fdd2f-2b12-46de-9654-d9139525ba87",
