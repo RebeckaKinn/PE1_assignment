@@ -24,41 +24,7 @@
             <input class="hidden" type="radio" name="product-slider" id="product-slide2">
             <input class="hidden" type="radio" name="product-slider" id="product-slide3">
 
-            <div class="slides-track">
-                <article>
-                    <div class="information">
-                        <h2>Name of product 1</h2>
-                        <div>
-                            <a href="" class="button red">view</a>
-                        </div>
-                    </div>
-                    <div class="product-image">
-                        <img src="public/placeholders/product.svg" class="shadow" alt="" loading="lazy"/>
-                    </div>
-                </article>
-                <article>
-                    <div class="information">
-                        <h2>Name of product 2</h2>
-                        <div>
-                            <a href="" class="button red">view</a>
-                        </div>
-                    </div>
-                    <div class="product-image">
-                        <img src="public/placeholders/product.svg" class="shadow" alt="" loading="lazy"/>
-                    </div>
-                </article>
-                <article>
-                    <div class="information">
-                        <h2>Name of product 3</h2>
-                        <div>
-                            <a href="" class="button red">view</a>
-                        </div>
-                    </div>
-                    <div class="product-image">
-                        <img src="public/placeholders/product.svg" class="shadow" alt="" loading="lazy"/>
-                    </div>
-                </article>
-            </div>
+            <div class="slides-track" id="top-products"></div>
 
             <div class="arrows">
                 <label for="product-slide3" class="arrow prev slide1">
@@ -92,30 +58,13 @@
         </section>
 
         <section>
-
-            <ul class="product-list">
-                <li class="shadow">
-                    <a href="" class="reset">
-                        <img src="public/placeholders/product.svg" alt="" loading="lazy"/>
-                    </a>
-                    <div class="product-card-information">
-                        <h5 class="remove-default">Item name</h5>
-                        <div class="price-section">
-                            <p class="remove-default highlight">Price</p>
-                            <a href="" class="icon-image">
-                                <img src="public/icons/cart-add.svg" alt="Add to cart" loading="lazy"/> 
-                            </a>
-                        </div>
-                    </div>
-                </li>
-
-                
-            </ul>
-
+            <ul class="product-list" id="all-products"></ul>
         </section>
     </main>
     
     <script src="components/header.js"></script>
     <script src="data/fetchProductData.js"></script>
+    <script src="components/carousel.js"></script>
+    <script src="components/allProducts.js"></script>
 </body>
 </html>
