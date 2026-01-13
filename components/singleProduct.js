@@ -10,7 +10,7 @@ async function renderProduct(product) {
   document.getElementById("product-container").innerHTML = /*HTML*/`
     <section>
         <div>
-        <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
+            <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
         </div>
 
         <div>
@@ -27,6 +27,15 @@ async function renderProduct(product) {
                 <span>Rating:</span>
                 <span>${product.rating} / ${highestRating}</span>
             </p>
+            <a href="">
+                <img src="public/icons/Share.svg" alt="" loading="lazy"/>
+            </a>
+            <a href="" class="button red">
+                <div>
+                    <img src="public/icons/cart-add.svg" alt="" loading="lazy"/>
+                </div>
+                <span>add</span>
+            </a>
         </div>
     </section>
 
