@@ -1,0 +1,15 @@
+.single-product-container{
+    width: 100%;
+    max-width: 608px;
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'image information'
+                        'description';
+}
+
+.single-product-container .icon{
+    max-height: 37px;
+    aspect-ratio: 1/1;
+}

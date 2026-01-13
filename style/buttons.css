@@ -14,3 +14,10 @@
     display: flex;
     gap: clamp(1rem, 5vw, 3rem);
 }
+
+.button img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    
+}

@@ -2,6 +2,7 @@ header{
     position: fixed;
     width: 100%;
     height: var(--header-height);
+    z-index: 20;
 }
 .header{
     display: flex;
@@ -16,7 +17,7 @@ header{
     border-bottom: 2px solid var(--color-main-2);
 
 
-    z-index: 20;
+    
 }
 
 

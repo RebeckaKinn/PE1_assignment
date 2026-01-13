@@ -126,6 +126,11 @@ img{
     background-color: var(--color-main-2);
     padding: 10px clamp(16px, 5vw, 45px);
 
+    display: flex;
+    width: fit-content;
+    justify-items: center;
+    align-items: center;
+    gap: .5rem;
     cursor: pointer;
     white-space: nowrap;
 }
