@@ -25,6 +25,16 @@ async function fetchProductById(id) {
     return product.data || null; 
 }
 
+async function getHighestRating() {
+  const products = await fetchProducts(); 
+  if (!products || products.length === 0) return 0;
+
+  const highest = products.reduce((max, product) => {
+    return product.rating > max ? product.rating : max;
+  }, 0);
+
+  return highest;
+}
 /*
 {
       "id": "159fdd2f-2b12-46de-9654-d9139525ba87",
