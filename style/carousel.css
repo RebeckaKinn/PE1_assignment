@@ -18,7 +18,7 @@
 .slides-track article {
     flex: 0 0 100%;  
     max-width: 100%; 
-    padding: 0 3rem;  
+    padding: 0 5rem;  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'information image';
@@ -70,6 +70,10 @@
 #product-slide1:checked ~ .slides-track { transform: translateX(0%); }
 #product-slide2:checked ~ .slides-track { transform: translateX(-100%); }
 #product-slide3:checked ~ .slides-track { transform: translateX(-200%); }
+
+.right-arrow{
+    rotate: calc(180deg);
+}
 
 .carousel .arrows label { display: none; }
 #product-slide1:checked ~ .arrows .slide1,
