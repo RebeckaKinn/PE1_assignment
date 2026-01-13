@@ -6,9 +6,15 @@ const options = {
   }
 };
 
-fetchProducts();
+
 async function fetchProducts(){
     const response = await fetch(`${API_URL}/online-shop`, options)
     const data = await response.json()
-    console.log(data.data)
+    return data.data;
+}
+
+async function fetchTopThreeProducts(){
+    const products = await fetchProducts();
+    const result = products.sort((a, b) => b.rating - a.rating).slice(0, 3);
+    return result;
 }
