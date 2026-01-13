@@ -3,28 +3,30 @@
     position: relative;
     overflow: hidden;
     display: block;
-    padding: 2rem 3rem !important;
+    padding: 2rem 0 !important;
     margin-top: clamp(2rem, 5vw, 100px);
     width: 100%;
-    
+    z-index: 0;
 }
 .slides-track {
-  display: flex; 
+    display: flex; 
     width: 100%;  
-  transition: transform 0.6s ease;
-  align-items: stretch;
-  z-index: 5 !important;
+    transition: transform 0.6s ease;
+    align-items: stretch;
+    
 }
 .slides-track article {
-  flex: 0 0 100%;  
-  max-width: 100%;   
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 'information image';
-  gap: clamp(0.5rem, 5vw, 2rem);
-  align-items: center;
+    flex: 0 0 100%;  
+    max-width: 100%; 
+    padding: 0 3rem;  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'information image';
+    gap: clamp(0.5rem, 5vw, 2rem);
+    align-items: center;
+    position: relative;
+    z-index: 2;
     
- z-index: 6 !important;
 }
 
 
@@ -45,21 +47,20 @@
     justify-self: end;
 }
 
+.carousel::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
+    width: 40%;
+    height: 100%;
 
-.carousel::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: 0;
-
-        width: 40%;
-        height: 100%;
-
-        background-color: var(--color-main-2);
-        clip-path: polygon(100% 0, 0 100%, 100% 100%);
-       /*må fikse z-index!!*/
-    }
+    background-color: var(--color-main-2);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    pointer-events: none;
+    z-index: -1;
+}
 
 .carousel .slides-track> * {
     z-index: 2;   
@@ -70,50 +71,42 @@
 #product-slide2:checked ~ .slides-track { transform: translateX(-100%); }
 #product-slide3:checked ~ .slides-track { transform: translateX(-200%); }
 
-/* Piler */
 .carousel .arrows label { display: none; }
 #product-slide1:checked ~ .arrows .slide1,
 #product-slide2:checked ~ .arrows .slide2,
 #product-slide3:checked ~ .arrows .slide3 { display: block; }
 
 .carousel .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2.5rem;
-  color: #fff;
-  cursor: pointer;
-  z-index: 5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
 }
 .carousel .arrow.prev { left: 1rem; }
 .carousel .arrow.next { right: 1rem; }
 
 @media screen and (max-width: 750px){
     .carousel{
-        
         padding: 0 !important;
-        padding-bottom: 2rem !important;
-
-        
-        
+        padding-bottom: 2rem !important;   
     }
-    .slides-trackl article{
+    .slides-track article{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         grid-template-areas: 'image'
                             'information';
-
+        padding: 0;
     }
     .slides-track .product-image{
         width: 100%;
         height: 100%;
         max-width: none;
-        aspect-ratio: auto;
-        /* overflow: hidden; */
-            
+        aspect-ratio: auto;      
     }
-    
     
     .slides-track .information{
         margin: 0 1rem;
@@ -128,9 +121,8 @@
         }
     }
 
-    .carousel::after {
+    .carousel::before {
         width: 40%;
         height: 25%;
-
     }
 }
