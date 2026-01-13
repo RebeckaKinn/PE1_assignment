@@ -8,11 +8,11 @@ function renderProduct(product) {
 
   document.getElementById("product-container").innerHTML = /*HTML*/`
     <h1>${product.title}</h1>
-    <div class="product-image">
+    <div>
       <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
     </div>
-    <p class="price">${product.discountedPrice || product.price} kr</p>
-    <p class="description">${product.description}</p>
+    <p>${product.discountedPrice || product.price} kr</p>
+    <p>${product.description}</p>
   `;
 }
 
