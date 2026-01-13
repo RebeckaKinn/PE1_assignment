@@ -14,8 +14,8 @@ async function renderProduct(product) {
         </div>
 
         <div>
-            <h1>${product.title}</h1>
-            <p>${product.discountedPrice || product.price} kr</p>
+            <h3>${product.title}</h3>
+            <p class="h5">${product.discountedPrice || product.price} kr</p>
             <p>
                 ${product.tags.map(tag => 
                     /*HTML*/`
@@ -40,7 +40,7 @@ async function renderProduct(product) {
             </a>
         </div>
 
-        <div>
+        <div class="description">
             <h5>Description</h5>
             <p>${product.description}</p>  
         </div>

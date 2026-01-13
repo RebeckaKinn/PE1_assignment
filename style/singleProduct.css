@@ -6,10 +6,18 @@
     grid-template-columns: auto auto;
     grid-template-rows: 1fr;
     grid-template-areas: 'image information'
-                        'description';
+                        'description description';
+    column-gap: 2rem;
 }
 
 .single-product-container .icon{
     max-height: 37px;
     aspect-ratio: 1/1;
+}
+
+
+
+.single-product-container .description{
+    grid-area: description;  
+    
 }
