@@ -3,3 +3,33 @@
     max-width: 850px !important;
     width: 100%;
 }
+
+.review-card{
+    width: clamp(400px, 5vw, 100%);
+    min-height: 189px;
+    background-color: var(--color-secondary-3);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-card .name{
+    color: var(--color-main);
+    font-size: var(--placeholder-font-size);
+    font-style: italic;
+    font-weight: 400;
+    font-family: var(--font-secondary);
+}
+
+.review-card .rating{
+    margin-top: auto;
+}
+
+@media screen and (max-width: 750px){
+    .review-container{
+        max-width: none !important;
+        min-width: 188%;
+    }
+
+}

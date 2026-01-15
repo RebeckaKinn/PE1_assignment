@@ -61,38 +61,17 @@ function getReviews(reviewsArray, highestRating){
     return reviewsArray
         .map(
         (review) => /*HTML*/`
-            <div class="shadow">
-                <h3>${review.username}</h3>
-                <p>${review.description}</p>
-                <p>
-                    <span>Rating:</span>
-                    <span>${review.rating} / ${highestRating}</span>
+            <article class="under-shadow review-card">
+                <h3 class="remove-default name">${review.username}</h3>
+                <p class="remove-default">${review.description}</p>
+                <p class="remove-default rating">
+                    <i>Rating:</i>
+                    <span class="h5">
+                        <span class="h4">${review.rating}</span>/${highestRating}
+                    </span>
                 </p>
-            </div>
-            <div class="shadow">
-                <h3>${review.username}</h3>
-                <p>${review.description}</p>
-                <p>
-                    <span>Rating:</span>
-                    <span>${review.rating} / ${highestRating}</span>
-                </p>
-            </div>
-            <div class="shadow">
-                <h3>${review.username}</h3>
-                <p>${review.description}</p>
-                <p>
-                    <span>Rating:</span>
-                    <span>${review.rating} / ${highestRating}</span>
-                </p>
-            </div>
-            <div class="shadow">
-                <h3>${review.username}</h3>
-                <p>${review.description}</p>
-                <p>
-                    <span>Rating:</span>
-                    <span>${review.rating} / ${highestRating}</span>
-                </p>
-            </div>
+            </article>
+            
         `
         )
         .join("");
