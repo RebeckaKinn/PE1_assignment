@@ -1,9 +1,8 @@
 
 .single-product-container{
     width: 100%;
-    max-width: calc(774px + 20px);
-    padding: 0 10px;
-    /* margin-top: clamp(2rem, 5vw, 100px); */
+    max-width: 786px;
+    padding: 0 10px; 
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 1fr;
@@ -86,8 +85,8 @@
     }
 
     .single-product-container .description {
-        padding-inline: max(10px, calc((100vw - 100%) / 2));
-        box-sizing: border-box;
+       padding: 0 10px;
+        
     }
     
 }
