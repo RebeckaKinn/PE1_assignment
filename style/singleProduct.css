@@ -54,7 +54,6 @@
         grid-template-areas: 'image'
                             'information'
                             'description';
-        column-gap: 1rem;
     }
     .single-product-container .product-image{
             width: 100%;
