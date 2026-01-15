@@ -34,12 +34,12 @@ function header(){
                     <li>
                         <a href="../cart.html">cart
                         <div>
-                            <img src="./public/icons/cart.svg" alt="" loading="lazy">
+                            <img src="../public/icons/cart.svg" alt="" loading="lazy">
                         </div>
                         </a> 
                     </li>
                     <li>
-                        <a class="button red" href="../account/login.html">log in</a>
+                        <a class="button red" href="/account/login.html">log in</a>
                     </li>
                     
                 </ul>
