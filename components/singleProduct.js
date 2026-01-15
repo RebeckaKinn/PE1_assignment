@@ -9,23 +9,25 @@ async function renderProduct(product) {
 
   document.getElementById("product-container").innerHTML = /*HTML*/`
     <section class="single-product-container">
-        <div>
+        <div class="product-image">
             <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
         </div>
 
-        <div>
-            <h3>${product.title}</h3>
-            <p class="h5">${product.discountedPrice || product.price} kr</p>
-            <p>
+        <div class="product-information">
+            <h3 class="remove-default">${product.title}</h3>
+            <p class="remove-default h5">${product.discountedPrice || product.price} kr</p>
+            <p class="remove-default">
                 ${product.tags.map(tag => 
                     /*HTML*/`
-                    <span>#${tag}</span>`
+                    <span class="tags">#${tag}</span>`
                 ).join('')
                 }
             </p>
-            <p>
-                <span>Rating:</span>
-                <span>${product.rating} / ${highestRating}</span>
+            <p class="remove-default">
+                <span class="button-text">Rating:</span>
+                <span class="h5">
+                    <span class="h4">${product.rating}</span>/${highestRating}
+                </span>
             </p>
             <div class="icon">
                 <a href="">
@@ -33,9 +35,7 @@ async function renderProduct(product) {
                 </a>
             </div>
             <a href="" class="button red">
-               
                     <img src="public/icons/cart-add-white.svg" alt="" loading="lazy"/>
-                
                 <span>add</span>
             </a>
         </div>

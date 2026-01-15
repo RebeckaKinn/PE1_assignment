@@ -59,7 +59,7 @@ body{
     width: 100%;
 }
 
-h1, h2, h3, h4, h5, a, button, .h5{
+h1, h2, h3, h4, h5, a, button, .h5, .button-text, .h4{
     font-family: var(--font-main);
     font-weight: 500;
 }
@@ -74,7 +74,7 @@ h2{
 h3{
     font-size: var(--h3);
 }
-h4{
+h4, .h4{
     font-size: var(--h4);
 }
 h5, .h5{
@@ -82,6 +82,9 @@ h5, .h5{
 }
 p{
     font-size: var(--p);
+}
+.button-text{
+    font-size: var(--button);
 }
 .highlight{
     font-size: var(--h5);
