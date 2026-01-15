@@ -61,7 +61,7 @@ Pages & User Stories
 - Specific Product Page
     GET /online-shop/<id>  •  Path: /product.html
     x Show title, description, price, discounted price, rating, reviews, and tags (fetched from the API) in a responsive layout.
-    Include a “share” icon that provides a shareable URL (query string or hash) containing the product ID.
+    x Include a “share” icon that provides a shareable URL (query string or hash) containing the product ID.
     As an owner (when logged in), provide an Add to Cart button.
 
 - Account Login Page
