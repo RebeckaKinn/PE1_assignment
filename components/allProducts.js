@@ -9,7 +9,7 @@ function renderAllProducts(products) {
           <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
         </a>
         <div class="product-card-information">
-          <h5 class="remove-default">${product.title}</h5>
+          <h5 class="remove-default h5-ajustable">${product.title}</h5>
           <div class="price-section">
             <p class="remove-default highlight">${product.discountedPrice || product.price} kr</p>
             <a href="cart.html?add=${product.id}" class="icon-image">
@@ -21,7 +21,10 @@ function renderAllProducts(products) {
     `
     )
     .join("");
+    
 }
+
+
 
 async function initProductList() {
   const products = await fetchProducts();

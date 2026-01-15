@@ -82,6 +82,13 @@ h4, .h4{
 }
 h5, .h5{
     font-size: var(--h5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.h5-ajustable{
+    font-size: min(var(--h5), max(14px, 100%)); 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 p{
     font-size: var(--p);
