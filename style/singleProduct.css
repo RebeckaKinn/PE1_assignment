@@ -62,6 +62,19 @@
             max-height: 600px;
             aspect-ratio: auto; 
         }
+
+    .single-product-container .product-information{
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+    }
+    .single-product-container .button{
+        align-self: center;
+        max-width: 390px;
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
     
 }
 
