@@ -15,7 +15,7 @@ async function renderProduct(product) {
 
         <div class="product-information">
             <h3 class="remove-default">${product.title}</h3>
-            <p class="remove-default h5">${product.discountedPrice || product.price} kr</p>
+            <p class="remove-default h5">${product.discountedPrice ? /*HTML*/`<span class="discount">${product.price}</span> <span>${product.discountedPrice}</span>`:  product.price} kr</p>
             <p class="remove-default">
                 ${product.tags.map(tag => 
                     /*HTML*/`

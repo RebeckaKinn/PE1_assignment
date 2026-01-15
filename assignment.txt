@@ -53,10 +53,10 @@ Pages & User Stories
 - Product Feed Page
     GET /online-shop  •  Path: /index.html
     Requirements:
-    An interactive banner carousel showing the 3 latest products (with prev/next controls and looping).
-    Each carousel item includes a button linking to the specific product page.
-    A responsive thumbnail grid listing at least 12 latest products.
-    Each product thumbnail is clickable and links to its product page.
+    x An interactive banner carousel showing the 3 latest products (with prev/next controls and looping).
+    x Each carousel item includes a button linking to the specific product page.
+    x A responsive thumbnail grid listing at least 12 latest products.
+    x Each product thumbnail is clickable and links to its product page.
 
 - Specific Product Page
     GET /online-shop/<id>  •  Path: /product.html

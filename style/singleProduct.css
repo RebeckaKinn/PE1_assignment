@@ -41,6 +41,12 @@
     flex-direction: column;
     gap: 20px;
 }
+.discount {
+    text-decoration: line-through;
+    font-style: italic;
+    color: var(--color-main);
+    font-size: 0.9em; 
+}
 
 
 
