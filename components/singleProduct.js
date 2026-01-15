@@ -42,7 +42,7 @@ async function renderProduct(product) {
 
         <div class="description">
             <h5>Description</h5>
-            <p>${product.description}</p>  
+            <p class="remove-default">${product.description}</p>  
         </div>
     </section>
 

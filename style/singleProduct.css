@@ -1,3 +1,6 @@
+main{
+    margin: 0 10px;
+}
 .single-product-container{
     width: 100%;
     max-width: 774px;
@@ -27,8 +30,7 @@
 
 
 .single-product-container .description{
-    grid-area: description;  
-    
+    grid-area: description;   
 }
 
 .tags{
@@ -46,6 +48,9 @@
 
 
 @media screen and (max-width: 750px){
+    main{
+        margin: 0;
+    }
     .single-product-container{
         
         display: grid;
@@ -84,6 +89,11 @@
         bottom: 30%;
         right: 0;
         margin-right: 10px;
+    }
+
+    .single-product-container .description {
+        padding-inline: max(10px, calc((100vw - 100%) / 2));
+        box-sizing: border-box;
     }
     
 }
