@@ -30,7 +30,7 @@ async function renderProduct(product) {
                 </span>
             </p>
             <div class="icon">
-                <a href="">
+                <a href="#" id="share-button" data-id="${product.id}">
                     <img src="public/icons/Share.svg" alt="" loading="lazy"/>
                 </a>
             </div>
@@ -51,7 +51,26 @@ async function renderProduct(product) {
         <div class="product-list">${getReviews(product.reviews, highestRating)}</div>
     </section>
   `;
+  enableShareButton(product.id);
 }
+
+function enableShareButton(productId) {
+    const shareButton = document.querySelector("#share-button");
+    if (!shareButton) return;
+
+    shareButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        const shareURL = `${window.location.origin}${window.location.pathname}?id=${productId}`;
+        navigator.clipboard.writeText(shareURL)
+            .then(() => {
+                alert("URL copied to clipboard!");
+            })
+            .catch((err) => {
+                console.error("Could not copy URL: ", err);
+            });
+    });
+}
+
 
 function getReviews(reviewsArray, highestRating){
     if (!reviewsArray || reviewsArray.length === 0) {
