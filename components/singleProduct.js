@@ -46,9 +46,9 @@ async function renderProduct(product) {
         </div>
     </section>
 
-    <section>
+    <section class="review-container">
         <h5>Reviews</h5>
-        <div>${getReviews(product.reviews, highestRating)}</div>
+        <div class="product-list">${getReviews(product.reviews, highestRating)}</div>
     </section>
   `;
 }
@@ -61,6 +61,30 @@ function getReviews(reviewsArray, highestRating){
     return reviewsArray
         .map(
         (review) => /*HTML*/`
+            <div class="shadow">
+                <h3>${review.username}</h3>
+                <p>${review.description}</p>
+                <p>
+                    <span>Rating:</span>
+                    <span>${review.rating} / ${highestRating}</span>
+                </p>
+            </div>
+            <div class="shadow">
+                <h3>${review.username}</h3>
+                <p>${review.description}</p>
+                <p>
+                    <span>Rating:</span>
+                    <span>${review.rating} / ${highestRating}</span>
+                </p>
+            </div>
+            <div class="shadow">
+                <h3>${review.username}</h3>
+                <p>${review.description}</p>
+                <p>
+                    <span>Rating:</span>
+                    <span>${review.rating} / ${highestRating}</span>
+                </p>
+            </div>
             <div class="shadow">
                 <h3>${review.username}</h3>
                 <p>${review.description}</p>
