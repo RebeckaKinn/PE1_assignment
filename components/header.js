@@ -7,7 +7,7 @@ function header(){
                 <picture>
                     <source media="(max-width: 800px)" srcset="/public/logo/Logo-secondary.svg">
                     <source media="(min-width: 801px)" srcset="/public/logo/Logo-main.svg">
-                    <img src="/public/logo/Logo-main.svg" alt="TechLabs logo" loading="lazy">
+                    <img src="./public/logo/Logo-main.svg" alt="TechLabs logo" loading="lazy">
                 </picture>
             </a>
         </div>
@@ -24,7 +24,7 @@ function header(){
                     <li>
                         <label for="menu" class="hidden-on-desktop" aria-label="Close menu">
                             <div class="close-menu-icon">
-                                <img src="/public/icons/close.svg" alt="" loading="lazy"/>
+                                <img src="./public/icons/close.svg" alt="" loading="lazy"/>
                             </div>
                         </label>
                     </li>
@@ -34,7 +34,7 @@ function header(){
                     <li>
                         <a href="../cart.html">cart
                         <div>
-                            <img src="/public/icons/cart.svg" alt="" loading="lazy">
+                            <img src="./public/icons/cart.svg" alt="" loading="lazy">
                         </div>
                         </a> 
                     </li>

@@ -13,7 +13,7 @@ function renderAllProducts(products) {
           <div class="price-section">
             <p class="remove-default highlight">${product.discountedPrice || product.price} kr</p>
             <a href="cart.html?add=${product.id}" class="icon-image">
-              <img src="public/icons/cart-add.svg" alt="Add to cart" loading="lazy"/> 
+              <img src="./public/icons/cart-add.svg" alt="Add to cart" loading="lazy"/> 
             </a>
           </div>
         </div>

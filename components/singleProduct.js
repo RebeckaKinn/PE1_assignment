@@ -31,11 +31,11 @@ async function renderProduct(product) {
             </p>
             <div class="icon">
                 <a href="#" id="share-button" data-id="${product.id}">
-                    <img src="public/icons/Share.svg" alt="" loading="lazy"/>
+                    <img src="./public/icons/Share.svg" alt="" loading="lazy"/>
                 </a>
             </div>
             <a href="" class="button red">
-                    <img src="public/icons/cart-add-white.svg" alt="" loading="lazy"/>
+                    <img src="./public/icons/cart-add-white.svg" alt="" loading="lazy"/>
                 <span>add</span>
             </a>
         </div>
