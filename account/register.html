@@ -18,7 +18,7 @@
     <main>
         <section class="form-section shadow">
             <h2 class="main-color-2">register</h2>
-            <form>
+            <form id="register-form">
                 <div>
                     <label for="email">email</label>
                     <input id="email" type="email" placeholder="example@mail.com">
@@ -31,12 +31,12 @@
                     <label for="repeat-password">repeat password</label>
                     <input id="repeat-password" type="text" placeholder="password">
                 </div>
+                <div class="button-container">
+                    <a class="button border" href="/account/login.html">back</a>
+                    <button class="button" type="submit">create</button>
+                </div>
             </form>
-            <div class="button-container">
-                <a class="button border" href="/account/login.html">back</a>
-                <a class="button" href="/index.html">create</a>
-            </div>
-
+            <p id="message"></p>
         </section>
     </main>
     
