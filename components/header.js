@@ -1,5 +1,7 @@
 
 function header(){
+    const isLoggedIn = localStorage.getItem("accessToken");
+
     document.getElementById('header').innerHTML = /*HTML*/`
     <section class="header">
         <div>
@@ -39,7 +41,10 @@ function header(){
                         </a> 
                     </li>
                     <li>
-                        <a class="button red" href="/account/login.html">log in</a>
+                        ${isLoggedIn
+                            ? /*HTML*/`<button class="button logout" id="logout">log out</button>`
+                            : /*HTML*/`<a class="button red" href="/account/login.html">log in</a>`
+                        }
                     </li>
                     
                 </ul>
@@ -47,4 +52,13 @@ function header(){
             </nav>
     </section>
     `;
+    if (isLoggedIn) {
+        document.getElementById("logout").addEventListener("click", logout);
+    }
+}
+
+function logout() {
+    localStorage.removeItem("accessToken");
+    localStorage.removeItem("user");
+    window.location.reload(true);
 }
