@@ -1,4 +1,5 @@
 async function renderProduct(product) {
+    const isLoggedIn = localStorage.getItem("accessToken");
     const highestRating = await getHighestRating();
   if (!product) {
     document.getElementById("product-container").innerHTML = /*HTML*/`
@@ -34,10 +35,15 @@ async function renderProduct(product) {
                     <img src="./public/icons/Share.svg" alt="" loading="lazy"/>
                 </a>
             </div>
-            <a href="" class="button red">
+            ${isLoggedIn
+                ? /*HTML*/`
+                <a href="" class="button red">
                     <img src="./public/icons/cart-add-white.svg" alt="" loading="lazy"/>
-                <span>add</span>
-            </a>
+                    <span>add</span>
+                </a>
+                `
+                : ''
+            }  
         </div>
 
         <div class="description">

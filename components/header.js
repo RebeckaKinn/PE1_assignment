@@ -42,7 +42,7 @@ function header(){
                     </li>
                     <li>
                         ${isLoggedIn
-                            ? /*HTML*/`<button class="button logout" id="logout">log out</button>`
+                            ? /*HTML*/`<button class="button" id="logout">log out</button>`
                             : /*HTML*/`<a class="button red" href="/account/login.html">log in</a>`
                         }
                     </li>
