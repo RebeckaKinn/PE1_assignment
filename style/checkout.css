@@ -1,3 +1,7 @@
+.checkout{
+    flex-direction: row;
+}
+
 .payment-method {
     gap: 1rem;
 }
@@ -20,4 +24,18 @@
 .payment-method input:checked + label {
     border: 2px solid var(--color-main);
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 750px){
+    
+    .checkout{
+        flex-direction: column;
+    }
+    .checkout .form-section{
+        order: 2;
+    }
+    #checkoutItems{
+        order: 1;
+        
+    }
 }
