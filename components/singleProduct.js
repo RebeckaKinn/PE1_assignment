@@ -37,10 +37,10 @@ async function renderProduct(product) {
             </div>
             ${isLoggedIn
                 ? /*HTML*/`
-                <a href="" class="button red">
+                <button class="button red" id="add-to-cart">
                     <img src="./public/icons/cart-add-white.svg" alt="" loading="lazy"/>
                     <span>add</span>
-                </a>
+                </button>
                 `
                 : ''
             }  
@@ -57,6 +57,10 @@ async function renderProduct(product) {
         <div class="product-list">${getReviews(product.reviews, highestRating)}</div>
     </section>
   `;
+  if(isLoggedIn){
+    const addToCartButton = document.getElementById('add-to-cart');
+    addToCartButton.addEventListener("click", () => addToCart(product));
+  }
   enableShareButton(product.id);
 }
 

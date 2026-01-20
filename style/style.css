@@ -171,6 +171,28 @@ img{
 a.reset{
     all: unset;
 }
+button.reset{
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    font: inherit; 
+    color: inherit; 
+    cursor: pointer;  
+    -moz-osx-font-smoothing: inherit; 
+    -webkit-font-smoothing: inherit; 
+    line-height: normal;
+}
+button.reset:focus{
+    outline: none;
+}
+button, a{
+    transition: transform 300ms;
+}
+button:hover, a:hover{
+     transform: scale(1.1);
+}
 
 .hidden{
         display: none !important;

@@ -38,9 +38,7 @@ async function loginUser(event) {
     localStorage.setItem("user", JSON.stringify({
       name: result.data.name,
       email: result.data.email,
-      avatar: result.data.avatar
     }));
-    console.log("name: " + result.data.name);
 
     message.textContent = "Success!";
     message.style.color = "green";

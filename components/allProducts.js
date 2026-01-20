@@ -1,3 +1,4 @@
+let allProducts = [];
 function renderAllProducts(products) {
   const isLoggedIn = localStorage.getItem("accessToken");
   const list = document.getElementById("all-products");
@@ -15,8 +16,9 @@ function renderAllProducts(products) {
             <p class="remove-default highlight">${product.discountedPrice || product.price} kr</p>
             ${isLoggedIn
                 ? /*HTML*/`
-                <a href="cart.html?add=${product.id}" class="icon-image">
-                <img src="./public/icons/cart-add.svg" alt="Add to cart" loading="lazy"/> 
+                <button class="reset icon-image" aria-label="Add to cart" onclick="addToCartById('${product.id}')">
+                  <img src="./public/icons/cart-add.svg" alt="Add to cart" loading="lazy"/>
+                </button> 
                 `
                 : ''
             }
@@ -30,11 +32,15 @@ function renderAllProducts(products) {
     
 }
 
-
-
 async function initProductList() {
-  const products = await fetchProducts();
-  renderAllProducts(products);
+  allProducts = await fetchProducts();
+  renderAllProducts(allProducts);
+}
+
+function addToCartById(productId) {
+  const product = allProducts.find(p => p.id === productId);
+  if (!product) return;
+  addToCart(product);
 }
 
 initProductList();
