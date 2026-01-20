@@ -9,3 +9,9 @@
     height: 100%;
     width: 100%;
 }
+/*reuse txt-space-evenly*/
+.txt-space-evenly{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

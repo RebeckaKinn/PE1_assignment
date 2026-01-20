@@ -1,0 +1,23 @@
+.cart-item{
+    width: 382px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;   
+    margin-bottom: 40px; 
+}
+.cart-item .item-image{
+    max-width: 150px;
+    max-height: 150px;
+    aspect-ratio: 1/1;
+}
+.cart-item .button-container{
+    gap: 5px;
+}
+
+.cart-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
