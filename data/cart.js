@@ -17,7 +17,21 @@ function addToCart(product){
         });
     }
     localStorage.setItem("localCart", JSON.stringify(cart));
-    console.log("cart:", cart);
+    const button = event.currentTarget;
+    button.classList.add("added");
+        setTimeout(() => {
+        button.classList.remove("added");
+    }, 1000);
+
+     const icon = button.querySelector("img");
+    const originalSrc = icon.src;
+
+    icon.src = "./public/icons/check.svg"; 
+
+    setTimeout(() => {
+        icon.src = originalSrc; 
+        icon.alt = "Add to cart";
+    }, 1000);
 }
 
 function increaseQuantity(productId) {

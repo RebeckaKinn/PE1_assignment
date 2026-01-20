@@ -18,3 +18,24 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.added {
+    background-color: #28a745 !important; 
+    border-color: #28a745 !important;
+    transform: scale(1.2);
+    transition: transform 200ms ease, background-color 200ms ease;
+}
+/* .button.added {
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+.icon-image.added {
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
