@@ -1,0 +1,23 @@
+.payment-method {
+    gap: 1rem;
+}
+
+.payment-method label{
+    width: 105px;
+    height: 77px;
+    background-color: var(--color-secondary-3);
+    border-radius: var(--form-border-radius);
+
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 200ms, transform 200ms;
+}
+.payment-method label div{
+    max-height: 40px;
+    width: auto;
+   
+}
+.payment-method input:checked + label {
+    border: 2px solid var(--color-main);
+    transform: scale(1.05);
+}
