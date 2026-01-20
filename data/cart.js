@@ -46,3 +46,8 @@ function decreaseQuantity(productId) {
         showCart();
     }
 }
+
+function emptyCart() {
+    localStorage.removeItem("localCart");
+    showCart();
+}

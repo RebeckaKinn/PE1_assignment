@@ -1,0 +1,11 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-size{
+    height: 100%;
+    width: 100%;
+}

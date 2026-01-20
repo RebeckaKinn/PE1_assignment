@@ -3,13 +3,17 @@ function showCart(){
     const cart = JSON.parse(localStorage.getItem("localCart")) || [];
     document.getElementById('cart').innerHTML = /*HTML*/`
         ${cart.length == 0 ? /*HTML*/`
-            <section>
+            <section class="full-size center">
                 <h5>oops!</h5>
                 <p class="h5">Looks like your cart is empty.</p>
                 <a href="../index.html" class="button">continue shopping</a>
             </section>
             ` 
             : /*HTML*/`
+            <section>
+                <h2>my cart</h2>
+                <button class="button red" onclick="emptyCart()">empty cart</button>
+            </section>
             <section>
                 ${showCartItems(cart)}
             </section>
