@@ -1,6 +1,17 @@
 showCart();
 function showCart(){
     const cart = JSON.parse(localStorage.getItem("localCart")) || [];
+    const isLoggedIn = localStorage.getItem("accessToken");
+    if(!isLoggedIn){
+        document.getElementById('cart').innerHTML = /*HTML*/`
+            <section class="full-size center">
+                <h5>oops!</h5>
+                <p class="h5">You need to be logged in to view your cart.</p>
+                <a href="/account/login.html" class="button">log in</a>
+            </section>
+        `;
+        return;
+    }
     document.getElementById('cart').innerHTML = /*HTML*/`
         ${cart.length == 0 ? /*HTML*/`
             <section class="full-size center">
@@ -10,17 +21,17 @@ function showCart(){
             </section>
             ` 
             : /*HTML*/`
-            <section>
+            <section class="center gap-1rem">
                 <h2>my cart</h2>
                 <button class="button red" onclick="emptyCart()">empty cart</button>
             </section>
-            <section>
+            <section class="cart-items-container">
                 ${showCartItems(cart)}
             </section>
             <section>
-                <div>
+                <div class="txt-space-evenly">
                     <p class="h5">total</p>
-                    <p class="h5"></p>
+                    <p class="h5">${getCartTotal(cart)} kr</p>
                 </div>
                 <div class="button-container">
                     <a class="button border" href="../index.html">exit</a>
@@ -30,6 +41,15 @@ function showCart(){
             `
         }
     `;
+}
+
+function getCartTotal(cart) {
+    const total = cart.reduce((sum, item) => {
+        const price = item.discountedPrice || item.price;
+        return sum + price * item.quantity;
+    }, 0);
+
+    return total.toFixed(2);
 }
 
 function showCartItems(cartItems){

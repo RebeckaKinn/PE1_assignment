@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
 }
+.gap-1rem{
+    gap: 1rem;
+}
 
 .full-size{
     height: 100%;

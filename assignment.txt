@@ -62,20 +62,20 @@ Pages & User Stories
     GET /online-shop/<id>  •  Path: /product.html
     x Show title, description, price, discounted price, rating, reviews, and tags (fetched from the API) in a responsive layout.
     x Include a “share” icon that provides a shareable URL (query string or hash) containing the product ID.
-    As an owner (when logged in), provide an Add to Cart button.
+    x As an owner (when logged in), provide an Add to Cart button.
 
 - Account Login Page
     POST /auth/login  •  Path: /account/login.html
-    Validated login form that requests and saves a token to the browser.
+    x Validated login form that requests and saves a token to the browser.
 
 - Account Register Page
     POST /auth/register  •  Path: /account/register.html
-    Validated register form to create a new account (email and password).
+    x Validated register form to create a new account (email and password).
 
 - Cart Page
     Path: /cart.html
     View products in the cart and the total price.
-    Adjust quantities, clear the cart, and proceed to checkout.
+    x Adjust quantities, clear the cart, and proceed to checkout.
 
 - Checkout Page
     Path: /checkout.html

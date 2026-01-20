@@ -137,7 +137,7 @@ img{
     border-radius: var(--button-border-radius);
     border: var(--button-border) solid var(--color-main-2);
     background-color: var(--color-main-2);
-    padding: 10px clamp(16px, 5vw, 45px);
+    padding: 10px clamp(20px, 5vw, 45px);
 
     display: flex;
     width: fit-content;
