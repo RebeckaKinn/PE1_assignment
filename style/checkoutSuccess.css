@@ -1,0 +1,16 @@
+.summary-grid{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.summary-grid li{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+.summary-grid li > * {
+    justify-self: center;
+}
