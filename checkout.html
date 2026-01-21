@@ -19,74 +19,76 @@
 </head>
 <body onload="header()">
     <header id="header"></header>
-    <main class="main-layout checkout">
+    <main class="main-layout">
+        <section class="checkout">
 
-        <section class="form-section shadow">
-            <h2 class="main-color-2">delivery</h2>
-            <form id="delivery-form">
-                <div>
-                    <label for="name">name</label>
-                    <input id="name" type="text" placeholder="Jane White">
-                </div>
-                <div>
-                    <label for="adress">adress</label>
-                    <input id="adress" type="text" placeholder="street">
+            <section class="form-section shadow">
+                <h2 class="main-color-2">delivery</h2>
+                <form id="delivery-form">
+                    <div>
+                        <label for="name">name</label>
+                        <input id="name" type="text" placeholder="Jane White">
+                    </div>
+                    <div>
+                        <label for="adress">adress</label>
+                        <input id="adress" type="text" placeholder="street">
+                        <div class="button-container">
+                            <input id="zip" type="text" placeholder="ZIP/postal">
+                            <input id="city" type="text" placeholder="City">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="country">country</label>
+                        <input id="country" type="text" placeholder="Norway">
+                    </div>
+                    <div>
+                        <label for="number">phone number</label>
+                        <input id="number" type="tel" placeholder="12345678">
+                    </div>
+    
+                    
+                        <h2 class="main-color-2">payment</h2>
+                        <div class="button-container payment-method">
+                            <input name="payment-method" id="payment1" type="radio" class="hidden">
+                            <label for="payment1" class="shadow center">
+                                <div>
+                                    <img src="public/payment/mastercard.svg" alt="" loading="lazy"/>
+                                </div>
+                            </label>
+    
+                            <input name="payment-method" id="payment2" type="radio" class="hidden" checked="checked">
+                            <label for="payment2" class="shadow center">
+                                <div>
+                                    <img src="public/payment/paypal.svg" alt="" loading="lazy"/>
+                                </div>
+                            </label>
+    
+                            <input name="payment-method" id="payment3" type="radio" class="hidden">
+                            <label for="payment3" class="shadow center">
+                                <div>
+                                    <img src="public/payment/apple.svg" alt="" loading="lazy"/>
+                                </div>
+                            </label>
+                        </div>
+                    
+    
+                    <div>
+                        <label for="card">card number</label>
+                        <input id="card" type="number" placeholder="0000 0000 0000 0000">
+                        <div class="button-container">
+                            <input id="cvv" type="number" placeholder="CVV">
+                            <input id="date" type="text" placeholder="expiry date">
+                        </div>
+                    </div>
                     <div class="button-container">
-                        <input id="zip" type="text" placeholder="ZIP/postal">
-                        <input id="city" type="text" placeholder="City">
+                        <a class="button border" href="../cart.html">cancle</a>
+                        <button class="button" type="submit">continue</button>
                     </div>
-                </div>
-                <div>
-                    <label for="country">country</label>
-                    <input id="country" type="text" placeholder="Norway">
-                </div>
-                <div>
-                    <label for="number">phone number</label>
-                    <input id="number" type="tel" placeholder="12345678">
-                </div>
-
-                
-                    <h2 class="main-color-2">payment</h2>
-                    <div class="button-container payment-method">
-                        <input name="payment-method" id="payment1" type="radio" class="hidden">
-                        <label for="payment1" class="shadow center">
-                            <div>
-                                <img src="public/payment/mastercard.svg" alt="" loading="lazy"/>
-                            </div>
-                        </label>
-
-                        <input name="payment-method" id="payment2" type="radio" class="hidden" checked="checked">
-                        <label for="payment2" class="shadow center">
-                            <div>
-                                <img src="public/payment/paypal.svg" alt="" loading="lazy"/>
-                            </div>
-                        </label>
-
-                        <input name="payment-method" id="payment3" type="radio" class="hidden">
-                        <label for="payment3" class="shadow center">
-                            <div>
-                                <img src="public/payment/apple.svg" alt="" loading="lazy"/>
-                            </div>
-                        </label>
-                    </div>
-                
-
-                <div>
-                    <label for="card">card number</label>
-                    <input id="card" type="number" placeholder="0000 0000 0000 0000">
-                    <div class="button-container">
-                        <input id="cvv" type="number" placeholder="CVV">
-                        <input id="date" type="text" placeholder="expiry date">
-                    </div>
-                </div>
-                <div class="button-container">
-                    <a class="button border" href="../cart.html">cancle</a>
-                    <button class="button" type="submit">continue</button>
-                </div>
-            </form>
+                </form>
+            </section>
+    
+            <section id="checkoutItems"></section>
         </section>
-
-        <section id="checkoutItems" class="cart-items-container"></section>
     </main>
     
     <script src="components/header.js"></script>

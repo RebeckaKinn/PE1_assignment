@@ -1,6 +1,12 @@
 .checkout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     flex-direction: row;
+    align-items: flex-start;
+    gap: clamp(1rem, 5vw, 100px);
 }
+
 
 .payment-method {
     gap: 1rem;
@@ -26,10 +32,23 @@
     transform: scale(1.05);
 }
 
-@media screen and (max-width: 750px){
+.checkout .form-section{
+    width: 100%;
+    max-width: 505px;
+}
+@media screen and (max-width: 990px){
+    .checkout{
+        gap: 0;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 927px){
     
     .checkout{
         flex-direction: column;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .checkout .form-section{
         order: 2;

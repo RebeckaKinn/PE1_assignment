@@ -7,7 +7,7 @@ function checkoutItems(){
     }, 0);
     const totalSum = total.toFixed(2);
     document.getElementById('checkoutItems').innerHTML = /*HTML*/`
-            <div>${showCheckoutItems(cart)}</div>
+            <div class="cart-items-container">${showCheckoutItems(cart)}</div>
             <div class="txt-space-evenly">
                 <p class="h5">total</p>
                 <p class="h5">${totalSum} kr</p>
