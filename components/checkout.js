@@ -1,4 +1,8 @@
-checkoutItems();
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("delivery-form");
+    form.addEventListener("submit", checkout);
+    checkoutItems(); 
+});
 function checkoutItems(){
     const cart = JSON.parse(localStorage.getItem("localCart")) || [];
     const total = cart.reduce((sum, item) => {
@@ -41,3 +45,5 @@ function showCheckoutItems(cart){
     )
     .join("");
 }
+
+
