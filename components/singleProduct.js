@@ -10,6 +10,7 @@ async function renderProduct(product) {
 
   document.getElementById("product-container").innerHTML = /*HTML*/`
     <section class="single-product-container">
+        <h1 class="hidden">Product page</h1>
         <div class="product-image">
             <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
         </div>
@@ -53,7 +54,7 @@ async function renderProduct(product) {
     </section>
 
     <section class="review-container">
-        <h5>Reviews</h5>
+        <h1 class="h5">Reviews</h1>
         <div class="product-list">${getReviews(product.reviews, highestRating)}</div>
     </section>
   `;

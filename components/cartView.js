@@ -5,7 +5,7 @@ function showCart(){
     if(!isLoggedIn){
         document.getElementById('cart').innerHTML = /*HTML*/`
             <section class="full-size center">
-                <h5>oops!</h5>
+                <h1 class="h5">oops!</h1>
                 <p class="h5">You need to be logged in to view your cart.</p>
                 <a href="/account/login.html" class="button">log in</a>
             </section>
@@ -15,20 +15,20 @@ function showCart(){
     document.getElementById('cart').innerHTML = /*HTML*/`
         ${cart.length == 0 ? /*HTML*/`
             <section class="full-size center">
-                <h5>oops!</h5>
+                <h1 class="h5">oops!</h1>
                 <p class="h5">Looks like your cart is empty.</p>
                 <a href="../index.html" class="button">continue shopping</a>
             </section>
             ` 
             : /*HTML*/`
             <section class="center gap-1rem">
-                <h2>my cart</h2>
+                <h1 class="h2">my cart</h1>
                 <button class="button red" onclick="emptyCart()">empty cart</button>
             </section>
-            <section class="cart-items-container">
+            <div class="cart-items-container">
                 ${showCartItems(cart)}
-            </section>
-            <section>
+            </div>
+            <div>
                 <div class="txt-space-evenly">
                     <p class="h5">total</p>
                     <p class="h5">${getCartTotal(cart)} kr</p>
@@ -37,7 +37,7 @@ function showCart(){
                     <a class="button border" href="../index.html">exit</a>
                     <a class="button" href="../checkout.html">continue</a>
                 </div>
-            </section>
+            </div>
             `
         }
     `;
