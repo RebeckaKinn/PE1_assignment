@@ -26,7 +26,7 @@ function header(){
                     <li>
                         <label for="menu" class="hidden-on-desktop" aria-label="Close menu">
                             <div class="close-menu-icon">
-                                <img src="../public/icons/close.svg" alt="" loading="lazy"/>
+                                <img src="../public/icons/close.svg" alt="" loading="lazy">
                             </div>
                         </label>
                     </li>

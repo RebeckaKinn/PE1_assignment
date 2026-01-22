@@ -9,7 +9,7 @@ function renderAllProducts(products) {
       (product) => /*HTML*/`
       <li class="shadow">
         <a href="product.html?id=${product.id}" class="reset">
-          <img src="${product.image.url}" alt="${product.image.alt || product.title}" loading="lazy"/>
+          <img src="${product.image.url}" alt="${product.image.alt || product.title}" loading="lazy">
         </a>
         <div class="product-card-information">
           <h5 class="remove-default h5-ajustable">${product.title}</h5>
@@ -18,7 +18,7 @@ function renderAllProducts(products) {
             ${isLoggedIn
                 ? /*HTML*/`
                 <button class="reset icon-image" aria-label="Add to cart" onclick="addToCartById('${product.id}')">
-                  <img src="./public/icons/cart-add.svg" alt="Add to cart" loading="lazy"/>
+                  <img src="./public/icons/cart-add.svg" alt="Add to cart" loading="lazy">
                 </button> 
                 `
                 : ''

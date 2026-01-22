@@ -39,7 +39,7 @@ function orderSummary(){
                     <ul class="remove-default">
                         <li class="payment-method-img shadow center">
                             <div>
-                                <img src="${payment.image}" alt="${payment.name}" loading="lazy"/>
+                                <img src="${payment.image}" alt="${payment.name}" loading="lazy">
                             </div>
                         </li>
                     </ul>

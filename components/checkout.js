@@ -26,7 +26,7 @@ function showCheckoutItems(cart){
       (item) => /*HTML*/`
         <div class="cart-item">
             <div class="item-image">
-                <img src="${item.image.url}" alt="${item.image.alt || item.title}"/>
+                <img src="${item.image.url}" alt="${item.image.alt || item.title}" loading="lazy">
             </div>
           <div class="cart-information">
             <h5 class="remove-default">${item.title}</h5>

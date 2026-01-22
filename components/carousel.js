@@ -11,7 +11,7 @@ function renderTopProductsCarousel(products) {
           </div>
         </div>
         <div class="product-image">
-          <img src="${product.image.url}" alt="${product.image.alt || product.title}" class="shadow" loading="lazy"/>
+          <img src="${product.image.url}" alt="${product.image.alt || product.title}" class="shadow" loading="lazy">
         </div>
       </article>
     `

@@ -12,7 +12,7 @@ async function renderProduct(product) {
     <section class="single-product-container">
         <h1 class="hidden">Product page</h1>
         <div class="product-image">
-            <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
+            <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy">
         </div>
 
         <div class="product-information">
@@ -33,13 +33,13 @@ async function renderProduct(product) {
             </p>
             <div class="icon">
                 <a href="#" id="share-button" data-id="${product.id}">
-                    <img src="./public/icons/Share.svg" alt="" loading="lazy"/>
+                    <img src="./public/icons/Share.svg" alt="" loading="lazy">
                 </a>
             </div>
             ${isLoggedIn
                 ? /*HTML*/`
                 <button class="button red" id="add-to-cart">
-                    <img src="./public/icons/cart-add-white.svg" alt="" loading="lazy"/>
+                    <img src="./public/icons/cart-add-white.svg" alt="" loading="lazy">
                     <span>add</span>
                 </button>
                 `
