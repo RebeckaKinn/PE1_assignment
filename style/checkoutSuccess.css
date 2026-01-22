@@ -41,9 +41,6 @@
     font-size: var(--small-text);
 }
 
-div.form-section{
-    padding: 40px 80px;
-}
 
 .success-checkmark{
     width: 95px;
@@ -54,21 +51,20 @@ div.form-section{
     height: auto;
     object-fit: contain;
 }
-
+.main-layout > section:last-child {
+        margin-bottom: 5rem;
+}
 
 @media screen and (max-width: 750px){
-   .main-layout > section:not(:first-child) {
-        padding: 0;
+   
+    .form-section{
         
-    }
-    div.form-section{
-        width: 100%;
-        padding: 2rem 1rem;
-        padding-bottom: 10rem;
         border-top: 1px solid var(--color-main-2);
     }
     .summary-grid li{
         gap: .5rem;
     }
-    
+    .main-layout > section:last-child {
+        margin-bottom: 0;
+    }
 }
