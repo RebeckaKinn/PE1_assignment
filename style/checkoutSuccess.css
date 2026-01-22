@@ -45,6 +45,7 @@ div.form-section{
     padding: 40px 80px;
 }
 
+
 @media screen and (max-width: 750px){
    .main-layout > section:not(:first-child) {
         padding: 0;
@@ -53,6 +54,9 @@ div.form-section{
     div.form-section{
         padding: 2rem 1rem;
         border-top: 1px solid var(--color-main-2);
+    }
+    .summary-grid li{
+        gap: .5rem;
     }
     
 }

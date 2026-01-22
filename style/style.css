@@ -194,7 +194,10 @@ button:hover, a:hover{
      transform: scale(1.1);
 }
 
-
+.txt-align-start{
+    width: 100%;
+    text-align: start;
+}
 
 .hidden{
         display: none !important;

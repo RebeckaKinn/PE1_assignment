@@ -54,7 +54,7 @@ function orderSummary(){
 function orderSummaryInformation(items) {
     return items.map(item => /*HTML*/`
         <li>
-            <span class="button-text">${item.title}</span>
+            <span class="button-text txt-align-start">${item.title}</span>
             <span class="button-text">${item.discountedPrice || item.price}</span>
             <span class="button-text">${item.quantity}</span>
             <span class="button-text">${((item.discountedPrice || item.price) * item.quantity).toFixed(2)}</span>
