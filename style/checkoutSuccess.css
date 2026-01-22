@@ -45,6 +45,16 @@ div.form-section{
     padding: 40px 80px;
 }
 
+.success-checkmark{
+    width: 95px;
+    height: 95px;
+}
+.success-checkmark img{
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
 
 @media screen and (max-width: 750px){
    .main-layout > section:not(:first-child) {
@@ -52,7 +62,9 @@ div.form-section{
         
     }
     div.form-section{
+        width: 100%;
         padding: 2rem 1rem;
+        padding-bottom: 10rem;
         border-top: 1px solid var(--color-main-2);
     }
     .summary-grid li{

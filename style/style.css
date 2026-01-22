@@ -198,6 +198,9 @@ button:hover, a:hover{
     width: 100%;
     text-align: start;
 }
+.txt-align-center{
+    text-align: center;
+}
 
 .hidden{
         display: none !important;

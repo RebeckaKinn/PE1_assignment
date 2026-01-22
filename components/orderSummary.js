@@ -10,7 +10,7 @@ function orderSummary(){
         return sum + price * item.quantity;
     }, 0).toFixed(2);
     document.getElementById('order-summary').innerHTML = /*HTML*/`
-        <h2 class="main-color-2">order summary</h2>
+        <h2 class="main-color-2 txt-align-center">order summary</h2>
             <ul class="summary-grid">
                 <li>
                     <span class="button-text">item</span>
