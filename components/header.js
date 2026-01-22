@@ -15,7 +15,7 @@ function header(){
         </div>
 
         <nav id="navigation">
-            <input class="" id="menu" type="checkbox" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menu-list"/>
+            <input id="menu" type="checkbox" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menu-list"/>
             <label for="menu" class="hidden-on-desktop" aria-label="Open menu">
                 <span></span>
                 <span></span>
