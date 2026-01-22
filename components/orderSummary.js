@@ -4,6 +4,7 @@ function orderSummary(){
     const lastOrder = orderInformation[orderInformation.length - 1];
     if (!lastOrder) return;
 
+    const payment = paymentMethods[lastOrder.paymentMethod];
     const total = lastOrder.items.reduce((sum, item) => {
         const price = item.discountedPrice || item.price;
         return sum + price * item.quantity;
@@ -19,9 +20,33 @@ function orderSummary(){
                 </li>
                 ${orderSummaryInformation(lastOrder.items)}
             </ul>
-            <div class="txt-space-evenly">
+            <div class="txt-space-evenly total-container">
                 <p class="h5">total</p>
                 <p class="h5">${total} kr</p>
+            </div>
+            <div class="total-container txt-space-evenly delivery-information">
+                <div>
+                    <span class="button-text">shipping address</span>
+                    <ul class="remove-default">
+                        <li>${lastOrder.deliveryInfo.name}</li>
+                        <li>${lastOrder.deliveryInfo.address}</li>
+                        <li>${lastOrder.deliveryInfo.zip}, ${lastOrder.deliveryInfo.city}</li>
+                        <li>${lastOrder.deliveryInfo.country}</li>
+                    </ul>
+                </div>
+                <div>
+                    <span class="button-text">payment method</span>
+                    <ul class="remove-default">
+                        <li class="payment-method-img shadow center">
+                            <div>
+                                <img src="${payment.image}" alt="${payment.name}" loading="lazy"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <a href="../index.html" class="button">return to homepage</a>
             </div>
     `;
 }

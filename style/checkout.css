@@ -12,7 +12,7 @@
     gap: 1rem;
 }
 
-.payment-method label{
+.payment-method label, .payment-method-img{
     width: 105px;
     height: 77px;
     background-color: var(--color-secondary-3);
@@ -22,7 +22,7 @@
     cursor: pointer;
     transition: border 200ms, transform 200ms;
 }
-.payment-method label div{
+.payment-method label div, .payment-method-img div{
     max-height: 40px;
     width: auto;
    

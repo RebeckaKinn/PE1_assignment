@@ -1,3 +1,18 @@
+const paymentMethods = {
+    payment1: {
+        name: "Mastercard",
+        image: "public/payment/mastercard.svg",
+    },
+    payment2: {
+        name: "PayPal",
+        image: "public/payment/paypal.svg",
+    },
+    payment3: {
+        name: "Apple Pay",
+        image: "public/payment/apple.svg",
+    },
+};
+
 function checkout(event) {
     const message = document.getElementById("message");
     event.preventDefault();
