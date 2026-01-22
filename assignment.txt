@@ -121,12 +121,12 @@ Grading Criteria
     x Sensible validation, error handling, and user feedback throughout
 
 - Best Practice
-    xSemantic, valid HTML
+    x Semantic, valid HTML
     SEO best practices applied
     CSS is DRY
     x Responsive styling replicates the design
     x Modular, clean JavaScript
     x Error handling in place
-    HTML, JavaScript, and CSS best practices are widely observed
+    x HTML, JavaScript, and CSS best practices are widely observed
 
 
