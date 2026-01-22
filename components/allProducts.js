@@ -3,12 +3,13 @@ function renderAllProducts(products) {
   const isLoggedIn = localStorage.getItem("accessToken");
   const list = document.getElementById("all-products");
 
+
   list.innerHTML = products
     .map(
       (product) => /*HTML*/`
       <li class="shadow">
         <a href="product.html?id=${product.id}" class="reset">
-          <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy"/>
+          <img src="${product.image.url}" alt="${product.image.alt || product.title}" loading="lazy"/>
         </a>
         <div class="product-card-information">
           <h5 class="remove-default h5-ajustable">${product.title}</h5>
