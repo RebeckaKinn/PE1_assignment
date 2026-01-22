@@ -79,54 +79,54 @@ Pages & User Stories
 
 - Checkout Page
     Path: /checkout.html
-    Form with various payment methods (does not need to be functional).
-    Form for delivery address.
+    x Form with various payment methods (does not need to be functional).
+    x Form for delivery address.
 
 - Success Page
     Path: /success.html
-    Display a success message after submitting payment and delivery address.
+    x Display a success message after submitting payment and delivery address.
 
 
 Grading Criteria
 
 - Style Guide
-    Font families are present
-    Primary and secondary colors are defined
-    Logo is present
-    Buttons and common components are present
-    Theme is well defined
-    Carefully considered and executed; acceptable at a professional establishment
+    x Font families are present
+    x Primary and secondary colors are defined
+    x Logo is present
+    x Buttons and common components are present
+    x Theme is well defined
+    x Carefully considered and executed; acceptable at a professional establishment
 
 - Design
-    Hi-fidelity prototype for desktop
-    Hi-fidelity prototype for mobile devices
-    Exact replication of the final web application with images
-    Carefully considered and executed; acceptable at a professional establishment
+    x Hi-fidelity prototype for desktop
+    x Hi-fidelity prototype for mobile devices
+    x Exact replication of the final web application with images
+    x Carefully considered and executed; acceptable at a professional establishment
 
 - Planning Documents
     GitHub issues include a Kanban board
-    Tasks have comprehensive titles and detailed descriptions or subtasks
-    Tasks include start and end dates
-    Tasks include sizing or estimates
-    Project meticulously planned, including a Roadmap view
+    x Tasks have comprehensive titles and detailed descriptions or subtasks
+    x Tasks include start and end dates
+    x Tasks include sizing or estimates
+    x Project meticulously planned, including a Roadmap view
 
 - User Stories
-    All user stories are completed to a high standard.
+    x All user stories are completed to a high standard.
 
 - User Experience
-    Forms have validation with helpful input guidelines
-    Clear success/error feedback for actions
-    Easy to use and navigate (obvious usability)
-    Loading indicators shown when users must wait
-    Sensible validation, error handling, and user feedback throughout
+    x Forms have validation with helpful input guidelines
+    x Clear success/error feedback for actions
+    x Easy to use and navigate (obvious usability)
+    x Loading indicators shown when users must wait
+    x Sensible validation, error handling, and user feedback throughout
 
 - Best Practice
     Semantic, valid HTML
     SEO best practices applied
     CSS is DRY
-    Responsive styling replicates the design
+    x Responsive styling replicates the design
     Modular, clean JavaScript
-    Error handling in place
+    x Error handling in place
     HTML, JavaScript, and CSS best practices are widely observed
 
 
