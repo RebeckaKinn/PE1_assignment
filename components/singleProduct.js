@@ -2,7 +2,7 @@ async function renderProduct(product) {
     const isLoggedIn = localStorage.getItem("accessToken");
     const highestRating = await getHighestRating();
   if (!product) {
-    document.getElementById("product-container").innerHTML = showErrorMessage("Produkt ikke funnet");
+    document.getElementById("product-container").innerHTML = showErrorMessage("Product not found.");
     return;
   }
 
@@ -83,7 +83,7 @@ function enableShareButton(productId) {
 
 function getReviews(reviewsArray, highestRating){
     if (!reviewsArray || reviewsArray.length === 0) {
-        return /*HTML*/`<p>No reviews yet.</p>`;
+        return showErrorMessage("This product has not been reviewed yet.");
     }
 
     return reviewsArray

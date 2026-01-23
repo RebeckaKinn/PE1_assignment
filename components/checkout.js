@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     checkoutItems(); 
 });
 function checkoutItems(){
+    const isLoggedIn = localStorage.getItem("accessToken");
+    if(!isLoggedIn){
+        document.getElementById('checkoutItems').innerHTML = showErrorMessage("");
+    }
     const cart = JSON.parse(localStorage.getItem("localCart")) || [];
     const total = cart.reduce((sum, item) => {
         const price = item.discountedPrice || item.price;

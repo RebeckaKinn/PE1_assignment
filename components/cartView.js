@@ -3,23 +3,12 @@ function showCart(){
     const cart = JSON.parse(localStorage.getItem("localCart")) || [];
     const isLoggedIn = localStorage.getItem("accessToken");
     if(!isLoggedIn){
-        document.getElementById('cart').innerHTML = /*HTML*/`
-            <section class="full-size center">
-                <h1 class="h5">oops!</h1>
-                <p class="h5">You need to be logged in to view your cart.</p>
-                <a href="/account/login.html" class="button">log in</a>
-            </section>
-        `;
+        document.getElementById('cart').innerHTML = showErrorMessageWithButton("oops!", "You need to be logged in to view your cart.", "/account/login.html", "log in");
         return;
     }
     document.getElementById('cart').innerHTML = /*HTML*/`
-        ${cart.length == 0 ? /*HTML*/`
-            <section class="full-size center">
-                <h1 class="h5">oops!</h1>
-                <p class="h5">Looks like your cart is empty.</p>
-                <a href="../index.html" class="button">continue shopping</a>
-            </section>
-            ` 
+        ${cart.length == 0 ? 
+            showErrorMessageWithButton("oops!", "Looks like your cart is empty.", "../index.html", "continue shopping")
             : /*HTML*/`
             <section class="center gap-1rem">
                 <h1 class="h2">my cart</h1>
