@@ -2,7 +2,10 @@ let allProducts = [];
 function renderAllProducts(products) {
   const isLoggedIn = localStorage.getItem("accessToken");
   const list = document.getElementById("all-products");
-
+  if(!products || products.length === 0){
+    list.innerHTML = showErrorMessage("There was a problem getting the products...");
+    return;
+  }
 
   list.innerHTML = products
     .map(
