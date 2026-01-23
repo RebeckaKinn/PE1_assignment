@@ -1,7 +1,9 @@
 function renderTopProductsCarousel(products) {
+  
   const track = document.getElementById("top-products"); 
-  if(!products){
-    track = showErrorMessage("There was a problem getting the products...");
+  if(!products || products.length === 0){
+    track.innerHTML = showErrorMessage("There was a problem getting the products...");
+    return;
   }
   track.innerHTML = products
     .map(
