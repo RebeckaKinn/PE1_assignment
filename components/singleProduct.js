@@ -2,9 +2,7 @@ async function renderProduct(product) {
     const isLoggedIn = localStorage.getItem("accessToken");
     const highestRating = await getHighestRating();
   if (!product) {
-    document.getElementById("product-container").innerHTML = /*HTML*/`
-        <p>Produkt ikke funnet</p>
-    `;
+    document.getElementById("product-container").innerHTML = showErrorMessage("Produkt ikke funnet");
     return;
   }
 
