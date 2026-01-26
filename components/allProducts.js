@@ -14,7 +14,7 @@ function renderAllProducts(products) {
         <a href="product.html?id=${product.id}" class="reset">
           <img src="${product.image.url}" alt="${product.image.alt || product.title}" loading="lazy">
         </a>
-        <div class="product-card-information">
+        <div class="flex column space-evenly product-card-information">
           <h5 class="remove-default h5-ajustable">${product.title}</h5>
           <div class="flex txt-space-evenly">
             <p class="remove-default highlight">${product.discountedPrice || product.price} kr</p>

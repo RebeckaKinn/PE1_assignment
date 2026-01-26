@@ -16,7 +16,6 @@
     <link href="style/style.css" rel="stylesheet">
     <link href="style/buttons.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
-    <link href="style/main.css" rel="stylesheet">
     <link href="style/main-feed.css" rel="stylesheet">
     <link href="style/components.css" rel="stylesheet">
 
@@ -26,13 +25,13 @@
 </head>
 <body onload="header()">
     <header id="header"></header>
-    <main class="main-layout">
+    <main class="flex column align-items-center main-layout">
         <section class="checkout">
             <h1 class="hidden">Checkout</h1>
 
-            <section class="form-section shadow">
+            <section class="center form-section shadow">
                 <h1 class="main-color-2 h2">delivery</h1>
-                <form id="delivery-form">
+                <form class="center" id="delivery-form">
                     <div>
                         <label for="name">name</label>
                         <input id="name" type="text" placeholder="Jane White">

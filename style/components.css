@@ -7,6 +7,12 @@
 .row{
     flex-direction: row;
 }
+.space-evenly{
+    justify-content: space-evenly;
+}
+.align-items-center{
+    align-items: center;
+}
 
 .txt-space-evenly{
     justify-content: space-between;

@@ -16,7 +16,6 @@
     <link href="style/style.css" rel="stylesheet">
     <link href="style/buttons.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
-    <link href="style/main.css" rel="stylesheet">
     <link href="style/main-feed.css" rel="stylesheet">
     <link href="style/components.css" rel="stylesheet">
 
@@ -26,14 +25,14 @@
 </head>
 <body onload="header()">
     <header id="header"></header>
-    <main class="main-layout">
+    <main class="flex column align-items-center main-layout">
         <section class="center">
             <div class="center round-button success-checkmark">
                 <img src="public/icons/check-tick.svg" alt="" loading="lazy">
             </div>
             <h5 class="txt-align-center">Thank you for your purchase!</h5>
         </section>
-        <section id="order-summary" class="form-section shadow center gap-1rem"></section>
+        <section id="order-summary" class="center form-section shadow center gap-1rem"></section>
     </main>
     
     <script src="components/errorHandeling.js"></script>

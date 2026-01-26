@@ -49,7 +49,7 @@ function showCartItems(cartItems){
             <div class="item-image">
                 <img src="${item.image.url}" alt="${item.image.alt || item.title}" loading="lazy">
             </div>
-          <div class="cart-information">
+          <div class="flex column space-evenly cart-information">
             <h5 class="remove-default">${item.title}</h5>
                 <div class="flex txt-space-evenly">
                     <p class="remove-default">price:</p>

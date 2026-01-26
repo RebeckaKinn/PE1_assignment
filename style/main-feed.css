@@ -27,10 +27,6 @@
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-
-    /* list-style-type: none;
-    padding: 0;
-    margin: 0; */
 }
 .product-list li{
     
@@ -46,9 +42,6 @@
 
 .product-card-information{
     padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 
 .icon-image{
