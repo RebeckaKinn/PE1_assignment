@@ -14,15 +14,15 @@ function showCart(){
                 <h1 class="h2">my cart</h1>
                 <button class="button red" onclick="emptyCart()">empty cart</button>
             </section>
-            <div class="cart-items-container">
+            <div class="flex column cart-items-container">
                 ${showCartItems(cart)}
             </div>
             <div>
-                <div class="txt-space-evenly">
+                <div class="flex txt-space-evenly">
                     <p class="h5">total</p>
                     <p class="h5">${getCartTotal(cart)} kr</p>
                 </div>
-                <div class="button-container">
+                <div class="flex row txt-space-evenly button-container">
                     <a class="button border" href="../index.html">exit</a>
                     <a class="button" href="../checkout.html">continue</a>
                 </div>
@@ -51,13 +51,13 @@ function showCartItems(cartItems){
             </div>
           <div class="cart-information">
             <h5 class="remove-default">${item.title}</h5>
-                <div class="txt-space-evenly">
+                <div class="flex txt-space-evenly">
                     <p class="remove-default">price:</p>
                     <p class="remove-default highlight">${item.discountedPrice || item.price} kr</p>
                 </div>
-                <div class="txt-space-evenly">
+                <div class="flex txt-space-evenly">
                     <p class="remove-default">qty:</p>
-                    <div class="button-container">
+                    <div class="flex row txt-space-evenly button-container">
                         <button class="round-button" onclick="decreaseQuantity('${item.id}')">-</button>
                         <p class="remove-default highlight">${item.quantity}</p>
                         <button class="round-button" onclick="increaseQuantity('${item.id}')">+</button>

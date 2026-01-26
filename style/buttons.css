@@ -11,10 +11,6 @@
 }
 
 .button-container{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
     gap: clamp(1rem, 5vw, 3rem);
 }
 

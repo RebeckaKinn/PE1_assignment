@@ -3,7 +3,7 @@ function header(){
     const isLoggedIn = localStorage.getItem("accessToken");
 
     document.getElementById('header').innerHTML = /*HTML*/`
-    <section class="header">
+    <section class="flex txt-space-evenly header">
         <div>
             <a href="../index.html">
                 <picture>

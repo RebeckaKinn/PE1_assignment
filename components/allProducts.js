@@ -16,7 +16,7 @@ function renderAllProducts(products) {
         </a>
         <div class="product-card-information">
           <h5 class="remove-default h5-ajustable">${product.title}</h5>
-          <div class="price-section">
+          <div class="flex txt-space-evenly">
             <p class="remove-default highlight">${product.discountedPrice || product.price} kr</p>
             ${isLoggedIn
                 ? /*HTML*/`

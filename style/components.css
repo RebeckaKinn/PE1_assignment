@@ -1,3 +1,18 @@
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+
+.txt-space-evenly{
+    justify-content: space-between;
+    align-items: center;
+}
+
 .center{
     display: flex;
     flex-direction: column;
@@ -13,11 +28,6 @@
     width: 100%;
 }
 
-.txt-space-evenly{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .added {
     background-color: #28a745 !important; 

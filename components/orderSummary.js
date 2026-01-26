@@ -20,11 +20,11 @@ function orderSummary(){
                 </li>
                 ${orderSummaryInformation(lastOrder.items)}
             </ul>
-            <div class="txt-space-evenly total-container">
+            <div class="flex txt-space-evenly total-container">
                 <p class="h5">total</p>
                 <p class="h5">${total} kr</p>
             </div>
-            <div class="total-container txt-space-evenly delivery-information">
+            <div class="total-container flex txt-space-evenly delivery-information">
                 <div>
                     <span class="button-text">shipping address</span>
                     <ul class="remove-default">
