@@ -13,13 +13,13 @@ async function renderProduct(product) {
             <img src="${product.image.url}" alt="${product.image.alt}" loading="lazy">
         </div>
 
-        <div class="product-information">
+        <div class="flex column product-information">
             <h3 class="remove-default">${product.title}</h3>
-            <p class="remove-default h5">${product.discountedPrice ? /*HTML*/`<span class="discount">${product.price}</span> <span>${product.discountedPrice}</span>`:  product.price} kr</p>
+            <p class="remove-default h5">${product.discountedPrice ? /*HTML*/`<span class="italic main-color discount">${product.price}</span> <span>${product.discountedPrice}</span>`:  product.price} kr</p>
             <p class="remove-default">
                 ${product.tags.map(tag => 
                     /*HTML*/`
-                    <span class="tags">#${tag}</span>`
+                    <span class="italic main-color">#${tag}</span>`
                 ).join('')
                 }
             </p>
@@ -89,7 +89,7 @@ function getReviews(reviewsArray, highestRating){
     return reviewsArray
         .map(
         (review) => /*HTML*/`
-            <article class="under-shadow review-card">
+            <article class="under-shadow flex column review-card">
                 <h3 class="remove-default name">${review.username}</h3>
                 <p class="remove-default">${review.description}</p>
                 <p class="remove-default rating">

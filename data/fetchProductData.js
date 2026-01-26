@@ -35,26 +35,3 @@ async function getHighestRating() {
 
   return highest;
 }
-/*
-{
-      "id": "159fdd2f-2b12-46de-9654-d9139525ba87",
-      "title": "Gold headphones",
-      "description": "Professional headphones with gold trim.",
-      "price": 449.99,
-      "discountedPrice": 382.49,
-      "image": {
-        "url": "https://static.cloud.noroff.dev/api/online-shop/3-headphones-beats.jpg",
-        "alt": "Gold headphones laying on a white background"
-      },
-      "rating": 4,
-      "tags": ["headphones"],
-      "reviews": [
-        {
-          "id": "88e11191-d2e5-4bfb-9bcb-d7e158284657",
-          "username": "Michael J.",
-          "rating": 4,
-          "description": "Good sound quality."
-        }
-      ]
-    },
-*/

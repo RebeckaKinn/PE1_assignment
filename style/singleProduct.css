@@ -30,21 +30,12 @@
     grid-area: description;   
 }
 
-.tags{
-    color: var(--color-main);
-    font-style: italic;
-}
-
 .single-product-container .product-information{
     width: 354px;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
 }
 .discount {
     text-decoration: line-through;
-    font-style: italic;
-    color: var(--color-main);
     font-size: 0.9em; 
 }
 

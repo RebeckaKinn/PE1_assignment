@@ -209,9 +209,7 @@ main{
     padding-top: var(--header-height);
     height: 100%;
 }
-.main-color-2{
-    color: var(--color-main-2);
-}
+
 .hidden{
         display: none !important;
     }

@@ -9,8 +9,6 @@
     min-height: 189px;
     background-color: var(--color-secondary-3);
     padding: 10px;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 
