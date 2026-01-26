@@ -28,9 +28,9 @@
     gap: 1rem;
     justify-content: center;
 
-    list-style-type: none;
+    /* list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0; */
 }
 .product-list li{
     

@@ -12,7 +12,7 @@
     height: 100%;
     width: 100%;
 }
-/*reuse txt-space-evenly*/
+
 .txt-space-evenly{
     display: flex;
     justify-content: space-between;
@@ -25,13 +25,7 @@
     transform: scale(1.2);
     transition: transform 200ms ease, background-color 200ms ease;
 }
-/* .button.added {
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-} */
 .icon-image.added {
     border-radius: 100%;
     display: flex;

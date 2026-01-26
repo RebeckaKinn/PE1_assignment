@@ -107,9 +107,6 @@ form input{
     padding: 1rem 2rem;
     width: 100%;
     max-width: 345px;
-    /* box-shadow: var(--shadow);
-    -webkit-box-shadow: var(--shadow);
-    -moz-box-shadow: var(--shadow); */
 }
 form label{
     font-family: var(--font-main);
@@ -191,7 +188,7 @@ button, a{
     transition: transform 300ms;
 }
 button:hover, a:hover{
-     transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .txt-align-start{
@@ -207,6 +204,12 @@ fieldset {
     margin: 0;
     min-width: 0; 
 }
+ul, ul li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .hidden{
         display: none !important;
     }

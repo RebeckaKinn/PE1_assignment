@@ -1,8 +1,8 @@
-.summary-grid{
+/* .summary-grid{
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
+} */
 
 .summary-grid li{
     display: grid;
@@ -35,9 +35,9 @@
 }
 
 .delivery-information li{
-    list-style-type: none;
+    /* list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0; */
     font-size: var(--small-text);
 }
 
